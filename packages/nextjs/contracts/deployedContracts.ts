@@ -7,7 +7,7 @@ import { GenericContractsDeclaration } from "~~/utils/scaffold-eth/contract";
 const deployedContracts = {
   11155111: {
     YourCollectible: {
-      address: "0xD83Cbd9ebe3aAd3b7dFa9051BCD855AAb4176886",
+      address: "0x2077E489aB66974516560a1d2a719f66fCDD938b",
       abi: [
         {
           inputs: [],
@@ -776,7 +776,7 @@ const deployedContracts = {
         rawFulfillRandomWords:
           "@chainlink/contracts/src/v0.8/vrf/VRFConsumerBaseV2.sol",
       },
-      deployedOnBlock: 10511438,
+      deployedOnBlock: 10520352,
     },
   },
 } as const;
