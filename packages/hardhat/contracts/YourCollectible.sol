@@ -9,6 +9,9 @@ import "@openzeppelin/contracts/access/Ownable.sol";
 import "@chainlink/contracts/src/v0.8/vrf/VRFConsumerBaseV2.sol";
 import "@chainlink/contracts/src/v0.8/vrf/interfaces/VRFCoordinatorV2Interface.sol";
 
+import "./VRFConsumerBaseV2.sol";
+import "./interfaces/VRFCoordinatorV2Interface.sol";
+
 contract YourCollectible is ERC721, ERC721Enumerable, ERC721URIStorage, Ownable, VRFConsumerBaseV2 {
     VRFCoordinatorV2Interface private immutable i_vrfCoordinator;
 
