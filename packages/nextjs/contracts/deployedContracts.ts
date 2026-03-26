@@ -7,7 +7,7 @@ import { GenericContractsDeclaration } from "~~/utils/scaffold-eth/contract";
 const deployedContracts = {
   11155111: {
     YourCollectible: {
-      address: "0x869687A8653B31aD351D48f4674fA992712929f9",
+      address: "0x1dFD39cbFD6fdDc629218DDdaE8528de888Cd082",
       abi: [
         {
           inputs: [],
@@ -136,22 +136,6 @@ const deployedContracts = {
             },
           ],
           name: "ERC721OutOfBoundsIndex",
-          type: "error",
-        },
-        {
-          inputs: [
-            {
-              internalType: "address",
-              name: "have",
-              type: "address",
-            },
-            {
-              internalType: "address",
-              name: "want",
-              type: "address",
-            },
-          ],
-          name: "OnlyCoordinatorCanFulfill",
           type: "error",
         },
         {
@@ -399,7 +383,7 @@ const deployedContracts = {
           outputs: [
             {
               internalType: "uint256",
-              name: "requestId",
+              name: "",
               type: "uint256",
             },
           ],
@@ -452,66 +436,10 @@ const deployedContracts = {
           type: "function",
         },
         {
-          inputs: [
-            {
-              internalType: "uint256",
-              name: "requestId",
-              type: "uint256",
-            },
-            {
-              internalType: "uint256[]",
-              name: "randomWords",
-              type: "uint256[]",
-            },
-          ],
-          name: "rawFulfillRandomWords",
-          outputs: [],
-          stateMutability: "nonpayable",
-          type: "function",
-        },
-        {
           inputs: [],
           name: "renounceOwnership",
           outputs: [],
           stateMutability: "nonpayable",
-          type: "function",
-        },
-        {
-          inputs: [
-            {
-              internalType: "uint256",
-              name: "",
-              type: "uint256",
-            },
-          ],
-          name: "s_requestIdToTokenId",
-          outputs: [
-            {
-              internalType: "uint256",
-              name: "",
-              type: "uint256",
-            },
-          ],
-          stateMutability: "view",
-          type: "function",
-        },
-        {
-          inputs: [
-            {
-              internalType: "uint256",
-              name: "",
-              type: "uint256",
-            },
-          ],
-          name: "s_tokenIdToRandomValue",
-          outputs: [
-            {
-              internalType: "uint256",
-              name: "",
-              type: "uint256",
-            },
-          ],
-          stateMutability: "view",
           type: "function",
         },
         {
@@ -773,10 +701,8 @@ const deployedContracts = {
         owner: "@openzeppelin/contracts/access/Ownable.sol",
         renounceOwnership: "@openzeppelin/contracts/access/Ownable.sol",
         transferOwnership: "@openzeppelin/contracts/access/Ownable.sol",
-        rawFulfillRandomWords:
-          "@chainlink/contracts/src/v0.8/vrf/VRFConsumerBaseV2.sol",
       },
-      deployedOnBlock: 10520590,
+      deployedOnBlock: 10524617,
     },
   },
 } as const;
